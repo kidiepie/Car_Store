@@ -14,7 +14,6 @@ int main()
 	cin >> x;
 	while (z == 1) {
 		if (x == 1) {
-<<<<<<< HEAD
 			cout << "Thank you for continuing" << endl;
 			cout << "Please select for one of the following cars (Corolla, Camry, Prius)" << endl;
 			cin >> y;
@@ -52,9 +51,6 @@ int main()
 		else {
 			cout << "Error, Please select one of the listed options" << endl;
 			cin >> x;
-=======
-			cout<<"Thank yoiu"
->>>>>>> 4cb9c90d9b13d464f6cce5b7900e9b07deeb0262
 		}
 	}
 }
