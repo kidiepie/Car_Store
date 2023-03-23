@@ -10,7 +10,7 @@ int main()
 	int x;
 	string y;
 	int z = 1;
-	cout << "Press 1 to continue, Press 2 to see the entire selection, Press 3 to quit: " << endl;
+	cout << "Press 1 to continue, Press 2 to see the entire selection, Press 3 to login, Press 4 to quit: " << endl;
 	cin >> x;
 	while (z == 1) {
 		if (x == 1) {
@@ -57,6 +57,23 @@ int main()
 			cin >> x;
 		}
 		else if (x == 3) {
+			string username;
+			string password;
+			cout << "Please Type your username: " << endl;
+			cin >> username;
+			cout << "Please type your password: " << endl;
+			cin >> password;
+			switch(username){
+				case username == "Peter" && password == "Pizza":
+					cout << "Hello Peter, If you would like to continue press 1, If you would like to see the entire selection press 2, If you would like to quit press 4: " << endl;
+					cin >> x;
+					break;
+				default: 
+					cout << "If you would like to continue press 1, If you would like to see the entire selection press 2, If you want to retry your login Press 3, If you would like to quit press 4: " << endl;
+					cin >> x;
+			}
+		}
+		else if (x == 4) {
 			cout << "Thank you for using the app, Until next time" << endl;
 			break;
 		}
