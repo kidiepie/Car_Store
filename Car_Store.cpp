@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	string cars[3][3] = { {"Corolla", "Camry", "Prius"}, {"$25.999", "$23.782", "$30.899"}, {"1", "0", "3"} };
+	string cars[4][3] = { {"Name: ""Corolla", "Camry", "Prius"}, {"Price: ""$25.999", "$23.782", "$30.899"}, {"Stock: ""1       ", "0       ", "3"} };
 	int x;
 	string y;
 	int z = 1;
@@ -43,7 +43,19 @@ int main()
 				cin >> x;
 			}
 		}
-		else if (x==2){}
+		else if (x==2){
+			cout << "Here is our full selection of cars:" << endl;
+			int rows = 4;
+			int cols = 3;
+			for (int i = 0; i < rows; i++) {
+				for (int j = 0; j < cols; j++) {
+					cout << cars[i][j] << ", ";
+				}
+				cout << "" << endl;
+			}
+			cout << "If you would like to continue press 1, If you would like to see the entire selection press 2, If you would like to quit press 3: " << endl;
+			cin >> x;
+		}
 		else if (x == 3) {
 			cout << "Thank you for using the app, Until next time" << endl;
 			break;
